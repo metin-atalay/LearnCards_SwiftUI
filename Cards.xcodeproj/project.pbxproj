@@ -11,6 +11,9 @@
 		F609762F280DEAEC00BCA887 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F609762E280DEAEC00BCA887 /* ContentView.swift */; };
 		F6097631280DEAEE00BCA887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6097630280DEAEE00BCA887 /* Assets.xcassets */; };
 		F6097634280DEAEE00BCA887 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6097633280DEAEE00BCA887 /* Preview Assets.xcassets */; };
+		F609763E280DEE8700BCA887 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F609763D280DEE8700BCA887 /* CardView.swift */; };
+		F6097640280DF4CD00BCA887 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F609763F280DF4CD00BCA887 /* CardModel.swift */; };
+		F6097642280DF4E100BCA887 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6097641280DF4E100BCA887 /* CardData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		F609762E280DEAEC00BCA887 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F6097630280DEAEE00BCA887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6097633280DEAEE00BCA887 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F609763A280DEE0100BCA887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F609763D280DEE8700BCA887 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F609763F280DF4CD00BCA887 /* CardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		F6097641280DF4E100BCA887 /* CardData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +58,12 @@
 		F609762B280DEAEC00BCA887 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				F609763B280DEE6D00BCA887 /* Views */,
+				F609763A280DEE0100BCA887 /* Info.plist */,
 				F609762C280DEAEC00BCA887 /* CardsApp.swift */,
 				F609762E280DEAEC00BCA887 /* ContentView.swift */,
 				F6097630280DEAEE00BCA887 /* Assets.xcassets */,
+				F6097643280DF51200BCA887 /* CardData */,
 				F6097632280DEAEE00BCA887 /* Preview Content */,
 			);
 			path = Cards;
@@ -65,6 +75,23 @@
 				F6097633280DEAEE00BCA887 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F609763B280DEE6D00BCA887 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F609763D280DEE8700BCA887 /* CardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F6097643280DF51200BCA887 /* CardData */ = {
+			isa = PBXGroup;
+			children = (
+				F6097641280DF4E100BCA887 /* CardData.swift */,
+				F609763F280DF4CD00BCA887 /* CardModel.swift */,
+			);
+			path = CardData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6097642280DF4E100BCA887 /* CardData.swift in Sources */,
 				F609762F280DEAEC00BCA887 /* ContentView.swift in Sources */,
+				F6097640280DF4CD00BCA887 /* CardModel.swift in Sources */,
+				F609763E280DEE8700BCA887 /* CardView.swift in Sources */,
 				F609762D280DEAEC00BCA887 /* CardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,9 +301,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Cards/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cards/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,9 +329,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Cards/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cards/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
